@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: fantasy;
+        }
+        h3{
+            text-align: center;
+        }
+        .card{
+            width: 750px;
+        }
+        .lab1{
+            padding-left: 30px;
+        }
+        .lab2{
+            padding-left: 150px;
+        }
+        .inp1{
+            padding-left: 0px;
+        }
+        label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: right;
+}
+input,select {
+  display: inline-block;
+  float: left;
+}
+    </style>
+</head>
+<body>
+    <script src="task.js"></script>
+    <div>
+        <h1>Event 1</h1><br>
+        <h3>Number of available seats: <span id="span"></span> </h3>
+    </div><br>
+    <div class='row'>
+        <div class='col-3'>
+        </div>
+        <div class='col-9'>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="logo.png" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 lab1">
+                            <label>Name: </label>
+                        </div>
+                        <div class="col-6 inp1">
+                            <input type="text" class="card-text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 lab1">
+                            <label>Email: </label>
+                        </div>  
+                        <div class="col-6 inp1">
+                            <input type="email" class="card-text"> <br>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-6 lab1">
+                            <label>Phone Number: </label>
+                        </div>  
+                        <div class="col-6 inp1">
+                            <input type="tel" class="card-text"> <br>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-6 lab1">
+                            <label>Number of Seats: </label>
+                        </div>  
+                        <div class="col-6 inp1">
+                            <select id="sel">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select><br> 
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-6 lab1">
+                            <label style="color: brown;">Name of the attendee2:</label>
+                        </div>  
+                        <div class="col-6 inp1">
+                            <input type="text" class="card-text"> <br>
+                        </div> 
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6 lab2">
+                            <button type="button" class="btn btn-primary" onclick="sub()">Submit</button>
+                        </div>
+                        <div class="col-6 inp1">
+                            <button type="button" class="btn btn-danger" onClick="window.location.reload();">Cancel</button>  
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class='col-4'>
+        </div>
+    </div>
+</body>
+</html>
